@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos Bases*/
+body{
+    background: black;
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    max-width: 125px;
+    margin-left: 10px;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('img/flash-capa-4.jpg');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.botao{
+    background-color: white;
+    border: none;
+    color:black;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-mais{
+    background-color: #6D6D6EB3;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: red;
+    color: white;
+}
+
+.botao-mais:hover{
+    background-color: black;
+    color:red;
+}
+
+.botao i{
+    margin-right:  8px;
+}
+
+.botao-mais i{
+    margin-right:  8px;
+}
+.filme-principal .container{
+    width: 70%;
+    margin-left: 10px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+   
+}
+
+.texto {
+    
+    background-color: white;
+    color: black;
+    font-family:Verdana;
+    font-size: 20px;
+    text-align:center;
+    padding:10px;
+    margin-top: 50px;
+    font-weight: bold;
+        
+}
+
+
+
+.trailer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.titulo-paginas{
+   text-align: center;
+   font-size: 40px;
+   margin-right: 30px;
+   margin-bottom: 20px;
+   font-family: 'Courier New', Courier, monospace;
+
+}
+
+.sinopse{
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+}
+
+.arrow{
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),url('img/arrow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}   
+
+.batman{
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),url('img/batman-capa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} 
+
+.black-mirror{
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),url('img/blackmirror-capa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;}
+
+.break-bad{
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),url('img/breaking-capa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.chefao{
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),url('img/chefao-capa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;}
+
+.flash{
+    background-image: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),url('img/flash-capa-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    position: fixed;
+    z-index: 2;
+    top: -100;
+    display: block;
+    transition: 350ms;
+    
+}
+
+.modal{
+    width: 50%;
+    height: 60%;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 80px auto 0 auto;
+    background: black;
+}
+
+.modal i {
+    float: right;
+    font-size: 15px;
+    color: white;
+    margin: 20px 20px;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.modal i:hover{
+    color: #990000;
+    transition: 350ms;
+}
+
+.titulo-modal{
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.txt-modal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+    color: white;
+}
+
+.modal iframe{
+    margin-left: 130px;
+    margin-top: 10px;
+}

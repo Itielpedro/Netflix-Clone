@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+  <header>
+      <div class="container">
+         <a href="index.html">
+            <img src="style/img/netflix-logo.png" alt="" class="logo">
+         </a>
+          <nav>
+              <a href="#">Início</a>
+              <a href="filmes.html">Filmes</a>
+              <a href="series.html">Séries</a>
+          </nav>
+      </div>
+  </header> 
+
+  <main>
+      <div class="filme-principal">
+          <div class="container">
+              <h3 class="titulo">THE FLASH</h3>
+              <p class="descricao">Um perito forense desperta de um coma com poderes especiais que serão postos à prova na luta contra forças que ameaçam a cidade. Assista agora a nova temporada de Flash que está imperdível.
+
+              </p>
+              <div class="botoes">
+                <button role="button" class="botao" onclick="assistir()">
+                    <i class="fas fa-play-circle"></i>
+                    ASSISTIR AGORA
+                </button>
+                <button role="button" class="botao-mais" onclick="abrir()">
+                    <i class="fas fa-info-circle"></i>
+                    MAIS INFORMAÇÕES
+                </button>
+              </div>
+              
+          </div>
+          
+      </div>
+  </main>
+
+  <div class="carrosel-filmes">
+      <div class="owl-carousel owl-theme">
+    <div class="item">
+        <a href="arrow.html">
+            <img src="style/img/arrow-mini.jpg" alt="capa arrow" class="box-filme">
+        </a>
+    </div>
+    <div class="item">
+        <a href="batman.html">
+            <img src="style/img/batman.jpg" alt="capa batman" class="box-filme">
+        </a>
+    </div>
+    <div class="item">
+        <a href="black-mirror.html">
+            <img src="style/img/blackmirror.jpg" alt="capa blackmirror" class="box-filme">>
+        </a>
+    </div>
+    <div class="item">
+       <a href="break-bad.html">
+        <img src="style/img/breaking.jpg" alt="capa breaking bad" class="box-filme">
+       </a>
+    </div>
+    <div class="item">
+        <a href="chefao.html">
+            <img src="style/img/chefao.jpg" alt="capa poderoso chefão" class="box-filme">
+        </a>
+    </div>
+    <div class="item">
+        <img src="style/img/demolidor.jpg" alt="capa demolidor" class="box-filme">
+      </div>
+      <div class="item">
+        <img src="style/img/gotham.jpg" alt="capa gotham" class="box-filme">
+      </div>
+      <div class="item">
+        <img src="style/img/justiceiro.jpg" alt="capa justiceiro" class="box-filme">
+      </div>
+      <div class="item">
+        <img src="style/img/lacasa.jpg" alt="capa la casa de papel" class="box-filme">
+      </div>
+      <div class="item">
+        <img src="style/img/loki.jpg" alt="capa loki" class="box-filme">
+      </div>
+      <div class="item">
+        <img src="style/img/narcos.jpg" alt="capa narcos" class="box-filme">
+    </div>
+    <div class="item">
+      <img src="style/img/karate.jpg" alt="capa karate kid" class="box-filme">
+    </div>
+    <div class="item">
+      <img src="style/img/lugarsilencioso.jpg" alt="capa lugar silencioso" class="box-filme">
+    </div>
+    <div class="item">
+      <img src="style/img/star.jpg" alt="capa starwars" class="box-filme">
+    </div>
+    <div class="item">
+      <img src="style/img/velozes.jpg" alt="capa velozes e furiosos" class="box-filme">
+    </div>
+  </div>
+
+  <div>
+    <footer>
+        <p class="texto">Desenvolvido Por Itiel Pedro</p>
+    </footer>
+  </div>
+  <div class="bg-modal" id="modal">
+      <div class="modal" >
+        <a href="">
+            <i class="fas fa-times" onclick="fechar()"></i>
+        </a>
+          <H3 class="titulo-modal">THE FLASH(2014)</H3>
+          <p class="txt-modal">Drama, Sci-Fi & Fantasy - 14 anos - 44m - O futuro favorece o mais rápido. Sinopse: Um perito forense desperta de um coma com poderes especiais que serão postos à prova na luta contra forças que ameaçam a cidade. Autores: Greg Berlanti, Geoff Johns e Andrew Kreisberg.</p>
+        
+        <iframe width="60%" height="70%" src="https://www.youtube.com/embed/fymU5y3Xm14" title="YouTube video player" frameborder="10" allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+  
+  
+  <script src="https://kit.fontawesome.com/582d695b98.js" crossorigin="anonymous"></script>
+
+  <!-- owl js-->
+  <script src="js/owl/jquery.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+
+  <script src="js/owl/script.js"></script>
+</body>
+</html>
